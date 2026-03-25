@@ -29,7 +29,7 @@ Meu MVP cobre o processo de venda de produtos na farmácia desde a identificaç�
 
   
 - **Fora do MVP**
-- - Processo completo de compras com fornecedores
+- Processo completo de compras com fornecedores
 - Transferência entre unidades
 - Contas a pagar
 - Relatórios gerenciais completos
