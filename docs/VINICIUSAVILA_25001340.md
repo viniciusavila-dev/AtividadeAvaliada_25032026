@@ -66,26 +66,40 @@ Liste e descreva **cada RN** de forma clara.
 # 3. Requisitos Funcionais (mínimo: 8)
 Liste os requisitos funcionais do seu MVP.
 
-**RF01 —**  
-**RF02 —**  
-**RF03 —**  
-**RF04 —**  
-**RF05 —**  
-**RF06 —**  
-**RF07 —**  
-**RF08 —**  
+**RF01 —** O sistema deve permitir identificar clientes pelo nome, CPF ou código.
 
-(Adicione mais se quiser.)
+**RF02 —** O sistema deve permitir cadastrar clientes durante o atendimento.
+
+**RF03 —** O sistema deve permitir pesquisar produtos por nome, código de barras ou fabricante.
+
+**RF04 —** O sistema deve verificar a disponibilidade de estoque antes de adicionar o produto à venda.
+
+**RF05 —** O sistema deve registrar vendas com um ou mais itens.
+
+**RF06 —** O sistema deve permitir classificar a venda como à vista ou a prazo.
+
+**RF07 —** O sistema deve gerar automaticamente contas a receber em vendas a prazo.
+
+**RF08 —** O sistema deve emitir comprovante ao final da venda.
+
+**RF09 —** O sistema deve atualizar automaticamente o estoque após a conclusão da venda.
+
+**RF10 —** O sistema deve solicitar validação de receita para medicamentos controlados.
 
 ---
 
-# 🛡 4. Requisitos Não Funcionais (mínimo: 4)
+# 4. Requisitos Não Funcionais (mínimo: 4)
 Liste os RNFs do sistema conforme seu MVP.
 
-**RNF01 —**  
-**RNF02 —**  
-**RNF03 —**  
-**RNF04 —**  
+**RNF01 —** O sistema deve responder às consultas de produtos em até 3 segundos.
+
+**RNF02 —** O sistema deve garantir autenticação de usuários por login e senha.
+
+**RNF03 —** O sistema deve manter registro das operações realizadas para auditoria.
+
+**RNF04 —** O sistema deve estar disponível durante o horário de funcionamento da farmácia com alta confiabilidade.
+
+**RNF05 —** O sistema deve possuir interface simples e intuitiva para uso no balcão.
 
 (Adicione mais se quiser.)
 
