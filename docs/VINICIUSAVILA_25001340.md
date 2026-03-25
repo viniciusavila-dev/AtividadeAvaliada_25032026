@@ -137,36 +137,8 @@ UC04 estende UC03
 ---
 
 # 6. Documentação dos Casos de Uso
-Para **cada caso de uso**, utilize o template abaixo:
----
 
-## **UCXX — Nome do Caso de Uso**
-**Ator(es):**  
-**Descrição:**  
-**Pré-condições:**  
-**Pós-condições:**  
-
-### Fluxo Principal
-1.  
-2.  
-3.  
-4.  
-
-### Fluxos Alternativos / Exceções
-- FA01 —  
-- FA02 —  
-
-### Relacionamentos
-- **Include:** (listar quando aplicável)  
-- **Extend:** (listar quando aplicável)  
-
-### Inserir o diagrama de atividades do Caso de Uso, demonstrando tudo o fluxo princial e alternativos/exceções.
-
----
-
-> Repita essa estrutura para **todos os seus casos de uso** (mínimo 10).
->
-> UC01 — Realizar Login
+UC01 — Realizar Login
 
 Ator(es): Atendente, Farmacêutico, Gerente, Financeiro, Administrador
 Descrição: Permite que o usuário acesse o sistema conforme seu perfil.
@@ -178,25 +150,24 @@ O usuário informa login e senha.
 O sistema valida as credenciais.
 O sistema identifica o perfil do usuário.
 O sistema libera o acesso ao ambiente principal.
+
 Fluxos Alternativos / Exceções
 FA01 — Login ou senha inválidos; o sistema informa erro.
 FA02 — Usuário inativo ou bloqueado; o sistema nega acesso.
+
 Relacionamentos
 Include: não se aplica
 Extend: não se aplica
-Diagrama de Atividades
-@startuml
-start
-:Informar login e senha;
-:Validar credenciais;
-if (Credenciais válidas?) then (Sim)
-  :Identificar perfil;
-  :Liberar acesso;
-  stop
-else (Não)
-  :Exibir mensagem de erro;
-  stop
-endif
-@enduml
 
+### Diagrama de Atividades
 
+```mermaid
+flowchart TD
+    A([Início]) --> B[Informar login e senha]
+    B --> C[Validar credenciais]
+    C --> D{Credenciais válidas?}
+    D -- Sim --> E[Identificar perfil]
+    E --> F[Liberar acesso]
+    F --> G([Fim])
+    D -- Não --> H[Exibir mensagem de erro]
+    H --> G
