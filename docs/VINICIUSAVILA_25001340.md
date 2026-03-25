@@ -7,9 +7,6 @@ Data: 25/03/2026
 
 ---
 
-# 1. Definição do MVP
-
----
 
 # 1. Definição do MVP
 
