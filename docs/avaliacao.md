@@ -47,13 +47,22 @@ Meu MVP cobre o processo de venda de produtos na farmácia desde a identificaç�
 # 2. Regras de Negócio (mínimo: 5)
 Liste e descreva **cada RN** de forma clara.
 
-**RN01 —**  
-**RN02 —**  
-**RN03 —**  
-**RN04 —**  
-**RN05 —**  
+**RN01 —** Produtos sem estoque disponível não podem ser vendidos.
 
-(Adicione mais se quiser.)
+**RN02 —** Medicamentos controlados só podem ser vendidos mediante validação de receita por um farmacêutico.
+
+**RN03 —** Toda venda finalizada deve atualizar automaticamente o estoque da unidade.
+
+**RN04 —** Vendas a prazo devem gerar automaticamente um lançamento em contas a receber com vencimento e status inicial “Aberta”.
+
+**RN05 —** O sistema deve permitir cadastro rápido de cliente durante a venda quando ele ainda não estiver registrado.
+
+**RN06 —** O comprovante da venda deve ser emitido obrigatoriamente ao final da operação.
+
+**RN07 —** Apenas gerentes podem alterar cadastro de produtos e preços.
+
+**RN08 —** O sistema deve alertar quando o estoque de um produto atingir ou ficar abaixo do nível mínimo.
+
 
 ---
 
