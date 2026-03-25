@@ -15,7 +15,6 @@ Data: 25/03/2026
 
 Meu MVP cobre o processo de venda de produtos na farmácia desde a identificação do cliente até a emissão do comprovante, incluindo consulta de produtos, verificação de estoque, cadastro rápido de cliente, validação de receita para medicamentos controlados, registro de venda à vista ou a prazo e atualização automática do estoque.
 
-- O que está **dentro** do MVP
 - **Dentro do MVP**
 - Identificar cliente
 - Cadastrar cliente rapidamente
@@ -29,7 +28,7 @@ Meu MVP cobre o processo de venda de produtos na farmácia desde a identificaç�
 - Atualizar estoque automaticamente após a venda
 
   
-- O que está **fora** do MVP
+- **Fora do MVP**
 - - Processo completo de compras com fornecedores
 - Transferência entre unidades
 - Contas a pagar
