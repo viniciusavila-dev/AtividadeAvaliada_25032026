@@ -111,7 +111,29 @@ Liste os RNFs do sistema conforme seu MVP.
 - relação entre eles e atores
 - pelo menos 3 includes
 - pelo menos 3 extends
-
+UC01 — Realizar Login
+UC02 — Consultar Produto
+UC03 — Identificar Cliente
+UC04 — Cadastrar Cliente
+UC05 — Registrar Venda
+UC06 — Validar Receita
+UC07 — Registrar Venda a Prazo
+UC08 — Atualizar Estoque
+UC09 — Emitir Comprovante
+UC10 — Gerar Conta a Receber
+UC11 — Registrar Compra
+UC12 — Gerar Conta a Pagar
+Includes usados
+UC05 inclui UC02
+UC05 inclui UC03
+UC05 inclui UC09
+UC07 inclui UC10
+UC11 inclui UC08
+UC11 inclui UC12
+Extends usados
+UC07 estende UC05
+UC06 estende UC05
+UC04 estende UC03
 ---
 
 # 6. Documentação dos Casos de Uso
@@ -143,5 +165,38 @@ Para **cada caso de uso**, utilize o template abaixo:
 ---
 
 > Repita essa estrutura para **todos os seus casos de uso** (mínimo 10).
+>
+> UC01 — Realizar Login
+
+Ator(es): Atendente, Farmacêutico, Gerente, Financeiro, Administrador
+Descrição: Permite que o usuário acesse o sistema conforme seu perfil.
+Pré-condições: Usuário cadastrado e ativo no sistema.
+Pós-condições: Usuário autenticado e com acesso liberado ao menu correspondente ao seu perfil.
+
+Fluxo Principal
+O usuário informa login e senha.
+O sistema valida as credenciais.
+O sistema identifica o perfil do usuário.
+O sistema libera o acesso ao ambiente principal.
+Fluxos Alternativos / Exceções
+FA01 — Login ou senha inválidos; o sistema informa erro.
+FA02 — Usuário inativo ou bloqueado; o sistema nega acesso.
+Relacionamentos
+Include: não se aplica
+Extend: não se aplica
+Diagrama de Atividades
+@startuml
+start
+:Informar login e senha;
+:Validar credenciais;
+if (Credenciais válidas?) then (Sim)
+  :Identificar perfil;
+  :Liberar acesso;
+  stop
+else (Não)
+  :Exibir mensagem de erro;
+  stop
+endif
+@enduml
 
 
