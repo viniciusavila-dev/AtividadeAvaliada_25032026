@@ -42,7 +42,6 @@ Meu MVP cobre o processo de venda de produtos na farmácia desde a identificaç�
 ---
 
 # 2. Regras de Negócio (mínimo: 5)
-Liste e descreva **cada RN** de forma clara.
 
 **RN01 —** Produtos sem estoque disponível não podem ser vendidos.
 
@@ -64,7 +63,6 @@ Liste e descreva **cada RN** de forma clara.
 ---
 
 # 3. Requisitos Funcionais (mínimo: 8)
-Liste os requisitos funcionais do seu MVP.
 
 **RF01 —** O sistema deve permitir identificar clientes pelo nome, CPF ou código.
 
@@ -89,7 +87,6 @@ Liste os requisitos funcionais do seu MVP.
 ---
 
 # 4. Requisitos Não Funcionais (mínimo: 4)
-Liste os RNFs do sistema conforme seu MVP.
 
 **RNF01 —** O sistema deve responder às consultas de produtos em até 3 segundos.
 
@@ -106,11 +103,8 @@ Liste os RNFs do sistema conforme seu MVP.
 ---
 
 # 5. Casos de Uso (mínimo: 10)
-### Inserir **diagrama de casos de uso geral**, demonstrando claramente:
-- os 10 casos
-- relação entre eles e atores
-- pelo menos 3 includes
-- pelo menos 3 extends
+
+
 UC01 — Realizar Login
 UC02 — Consultar Produto
 UC03 — Identificar Cliente
@@ -598,7 +592,7 @@ flowchart TD
 
 ---
 
-# 5. Casos de Uso — Diagrama Geral
+#  Casos de Uso — Diagrama Geral
 
 ```mermaid
 flowchart LR
