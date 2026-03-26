@@ -98,7 +98,6 @@ Meu MVP cobre o processo de venda de produtos na farmácia desde a identificaç�
 
 **RNF05 —** O sistema deve possuir interface simples e intuitiva para uso no balcão.
 
-(Adicione mais se quiser.)
 
 ---
 
